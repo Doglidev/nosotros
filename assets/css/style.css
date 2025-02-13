@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../img/luyyo.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Georgia', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+    text-align: center;
+
+    
+
+    
+}
+
+
+
+h1 {
+    text-align: center;
+    
+    font-family: 'Georgia', sans-serif;
+    font-size: 65px;
+    animation: parpadeo 0.5s infinite alternate;
+    
+}
+
+@keyframes parpadeo {
+    100% { opacity: 0.5;
+    color: red;}
+    0% { opacity: 1; }
+    
+}
+
+
+
+.lista {
+    border: 1px solid white;;
+    width: 600px;
+    height: 700px;
+    margin: 0 auto;
+    color: white;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 10px;
+   
+
+}
+
+ol {
+    text-align: center;
+    list-style: none;
+    color: white;
+    
+}
+
+li {
+    display: none;
+    font-size: 20px;
+    text-shadow: -1px -1px 0 black;
+    
+}
+
+
+
+#mostrarLista {
+    position: absolute;
+    top: 3%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+#mostrarLista:hover {
+    background-color: #ebe5e7af;
+    border-radius: 5px;
+}
+
+
+@media (max-width: 600px){
+body {
+    padding: 10px;
+}
+
+h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    
+}
+
+.lista {
+    width: 95%;
+    max-width: none;
+    height: 83%;
+}
+
+#mostrarLista {
+    width: 100%;
+    font-size: 16px;
+    padding: 12px;
+}
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
